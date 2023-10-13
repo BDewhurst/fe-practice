@@ -1,6 +1,6 @@
 function Restaurants () {
     return (
-        <text>Restaurants</text>
+        <h2>Restaurants</h2>
     )
 }
 
