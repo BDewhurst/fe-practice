@@ -1,6 +1,13 @@
+import CuisineCard from "./CuisineCard"
+import "../css/Cuisine.css"
+
 function Cuisine () {
     return (
-        <h2>Cuisine</h2>
+       
+        <main>
+        <h2 id='cuisine_title'> Choose Your Cuisine...</h2>
+        <CuisineCard />
+        </main>
     )
 }
 

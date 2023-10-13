@@ -1,12 +1,14 @@
-
+import "../css/Home.css"
 
 function Home() {
 
 
     return (
         <main>
-        <div>
-            <h2>Welcome to Take That!</h2>
+        
+            <h1 id="home_header">Home</h1>
+            <div id='home'>
+            <h2 id="welcome_banner">Welcome to Take That!</h2>
             <p>
             Find yourself a delicious takeaway...
             <br />

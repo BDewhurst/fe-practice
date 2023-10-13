@@ -1,0 +1,33 @@
+.food_img {
+    max-width: 20vw; 
+    height: auto; 
+}
+
+.cuisine_name {
+    color: black;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+}
+.cuisine-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .cuisine {
+    text-align: center;
+    margin: 15px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color:  #02cdbc;
+    transition: all 0.3s ease;
+    
+  }
+  .cuisine:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+  }
