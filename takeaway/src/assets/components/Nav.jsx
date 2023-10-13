@@ -5,9 +5,9 @@ import "../css/nav.css"
 const Nav = () => {
     return(
         <>
-         <img src="./src/assets/deliveroo.png" id="deliveroo_logo"/>
-            <nav>
-               
+         
+            <nav className='nav_bar'>
+            <img src="./src/assets/deliveroo.png" id="deliveroo_logo"/>
             <header>
                 <h1 id="main_title">Take that!</h1>
             </header>
