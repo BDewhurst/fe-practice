@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { getAllRestaurants} from "../../../api";
-
+import "../css/RestaurantCard.css"
+import {AiFillStar} from "react-icons/ai"
 
 function RestaurantCard() {
   const [restaurants, setRestaurants] = useState([]);
@@ -19,7 +20,7 @@ function RestaurantCard() {
              <h1 className="restaurant_name">{name}</h1>
              <p>{address}</p>
              <p>{cuisine}</p>
-             <p>{rating}</p>
+             <p className="Rating-container"><AiFillStar/>{rating}</p>
              <img src={article_img_url} alt={name} className="restaurant_img"/>          
         </li>
        

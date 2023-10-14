@@ -1,0 +1,8 @@
+#restaurant_title {
+    justify-content: center;
+    text-align: center;
+    margin: 3vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:4vh;
+    background-color: white;
+}
