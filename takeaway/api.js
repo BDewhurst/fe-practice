@@ -21,3 +21,10 @@ export const getRestaurantById = (restaurantId) => {
         return res.data
     })
 }
+
+export const getItemById = (restaurantId) => {
+    return takeawayApi.get(`/items/${restaurantId}`).then((res) => {
+        return res.data
+    })
+}
+
