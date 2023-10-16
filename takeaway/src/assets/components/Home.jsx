@@ -4,7 +4,7 @@ function Home() {
 
 
     return (
-        <main>
+        <main className="home-page">
         
             <h1 id="home_header">Home</h1>
             <div id='home'>

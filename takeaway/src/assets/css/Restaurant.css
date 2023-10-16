@@ -6,3 +6,10 @@
     font-size:4vh;
     background-color: white;
 }
+.restaurant a,
+.restaurant a:visited,
+.restaurant a:focus,
+.restaurant a:active {
+  text-decoration: none;
+  color: inherit; 
+}

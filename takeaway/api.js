@@ -15,3 +15,9 @@ export const getAllRestaurants = () => {
         return res.data
     })
 }
+
+export const getRestaurantById = (restaurantId) => {
+    return takeawayApi.get(`/restaurants/${restaurantId}`).then((res) => {
+        return res.data
+    })
+}

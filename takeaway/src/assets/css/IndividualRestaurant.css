@@ -1,0 +1,37 @@
+.individual-restaurant {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .restaurant-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  .restaurant-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .rating-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .rating-container svg {
+    margin-right: 5px;
+    color: #ffcc00; 
+  }
+  
+  .restaurant_img {
+    width: 30vw; 
+    height: auto; 
+    border-radius: 5px;
+    margin-top: 10px;
+  }

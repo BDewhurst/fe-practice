@@ -4,6 +4,7 @@ import Nav from './assets/components/Nav'
 import {Routes, Route } from 'react-router-dom'
 import Restaurants from './assets/components/Restaurants'
 import Cuisine from './assets/components/Cuisine'
+import IndividualRestaurant from './assets/components/IndividualRestaurantCard'
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
   <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/Restaurants" element={<Restaurants />}/>
-        <Route path="Restaurant/:restaurantId" />
+        <Route path="Restaurant/:restaurantId" element={<IndividualRestaurant />}/>
         <Route path="/Cuisine" element={<Cuisine />}/>
         </Routes>
     </>
