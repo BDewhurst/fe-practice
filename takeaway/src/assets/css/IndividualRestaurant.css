@@ -1,17 +1,12 @@
-.individual-restaurant {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .restaurant-card {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-  }
-  
+.restaurant-container {
+  display: flex;
+}
+
+.restaurant-details {
+  flex: 1;
+  margin-right: 20px;
+}
+
   .restaurant-name {
     font-size: 24px;
     font-weight: bold;

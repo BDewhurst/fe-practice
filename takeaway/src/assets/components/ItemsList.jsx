@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react"
 import { getItemById } from "../../../api"
+import "../css/itemList.css"
 function ItemList ({restaurantId}) {
     const [items, setItems] = useState([])
     useEffect(()=> {
         getItemById(restaurantId).then((data) => {
             setItems(data)
         })
-    })
+    }, [restaurantId])
     return (
         <ul className="individual-item">
         

@@ -1,0 +1,17 @@
+.individual-item {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 5px; 
+    padding: 5px;
+    list-style: none;
+  }
+
+  .item-card {
+    margin-bottom: 5px;
+  }
+  
+.individual-item {
+    flex: 1;
+    list-style: none;
+    padding: 0;
+  }
