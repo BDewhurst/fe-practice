@@ -3,15 +3,26 @@ import { getAllRestaurants} from "../../../api";
 import "../css/RestaurantCard.css"
 import {AiFillStar} from "react-icons/ai"
 import { Link } from "react-router-dom";
+import { ClipLoader } from "react-spinners";
 
 function RestaurantCard() {
   const [restaurants, setRestaurants] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     getAllRestaurants().then((data) => {
       setRestaurants(data);
+     setIsLoading(false)
     });
   }, []); 
+
+  if (isLoading) {
+    return (
+      <div className="loading-container">
+        <ClipLoader color={"#36D7B7"} loading={isLoading} size={50} />
+      </div>
+    );
+  }
 
   return (
     <ul className="restaurant-list">
