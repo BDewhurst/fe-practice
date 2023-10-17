@@ -6,6 +6,7 @@ import ItemList from "./ItemsList";
 import {AiFillStar} from "react-icons/ai"
 import { ClipLoader } from "react-spinners";
 import RatingSystem from "./RatingSystem";
+import "../css/RatingSystem.css"
 
 function IndividualRestaurant() {
   const { restaurantId } = useParams();
@@ -39,8 +40,12 @@ function IndividualRestaurant() {
           </div>
         ))}
       </div>
-      <RatingSystem setRestaurant={setRestaurant} />
+      <div className="items-and-rating-container">
       <ItemList restaurantId={restaurantId} />
+      <div className="individual-rating-container">
+      <RatingSystem setRestaurant={setRestaurant} />
+      </div>
+      </div>
     </main>
   );
 }

@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react"
 import { useParams } from "react-router-dom"
 import { changeRating, getRestaurantById } from "../../../api";
-
+import "../css/RatingSystem.css"
+import {AiFillStar} from "react-icons/ai"
 
 function RatingSystem ({setRestaurant}) {
   const { restaurantId } = useParams();
@@ -18,14 +19,15 @@ const handleClick = (newRating) => {
 };
 
     return (
-        <div>
-        <h2>Rating System</h2>
-        <p>Current Rating: {rating}</p>
-        <button onClick={() => handleClick(1)}>1 Star</button>
-        <button onClick={() => handleClick(2)}>2 Stars</button>
-        <button onClick={() => handleClick(3)}>3 Stars</button>
-        <button onClick={() => handleClick(4)}>4 Stars</button>
-        <button onClick={() => handleClick(5)}>5 Stars</button>
+        <div id="rating-system">
+        <h2>Please leave a rating...</h2>
+        <div id="stars">
+        <AiFillStar onClick={() => handleClick(1)}/>
+        <AiFillStar onClick={() => handleClick(2)}/>
+        <AiFillStar onClick={() => handleClick(3)}/>
+        <AiFillStar onClick={() => handleClick(4)}/>
+        <AiFillStar onClick={() => handleClick(5)}/>
+        </div>
       </div>
     )
 }

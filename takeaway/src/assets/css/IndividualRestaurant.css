@@ -29,4 +29,12 @@
   .rating-container svg {
     margin-right: 5px;
   }
+
+
+  .items-and-rating-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: space-around; 
+  }
   
