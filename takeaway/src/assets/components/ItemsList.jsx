@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import { getItemById } from "../../../api"
 import "../css/itemList.css"
+import {BiBasket} from "react-icons/bi"
 function ItemList ({restaurantId}) {
     const [items, setItems] = useState([])
     useEffect(()=> {
@@ -17,6 +18,7 @@ function ItemList ({restaurantId}) {
                <h1 className="item-name">{name}</h1>
                <p>{description}</p>
                <p>£{price}</p>
+               <p id="basket-container">Basket<BiBasket/></p>
                </li>
             )
           )
