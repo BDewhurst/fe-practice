@@ -28,3 +28,10 @@ export const getItemById = (restaurantId) => {
     })
 }
 
+export const changeRating = (restaurantId, rating) => {
+    return takeawayApi.patch(`restaurants/${restaurantId}`, {'inc_vote': rating}).then((res)=> {
+        console.log(res.data)
+        return res.data
+    })
+}
+
