@@ -2,14 +2,14 @@ import { Link } from 'react-router-dom'
 import "../css/nav.css"
 import {BiHome, BiFoodMenu} from "react-icons/bi"
 import {IoFastFood} from "react-icons/io5"
-
+import {GiKangaroo} from "react-icons/gi"
 
 const Nav = () => {
     return(
         <>
          
             <nav className='nav_bar'>
-            <img src="./src/assets/deliveroo.png" id="deliveroo_logo"/>
+            <GiKangaroo id="deliveroo_logo"/>
             <header>
                 <h1 id="main_title">Take that!</h1>
             </header>

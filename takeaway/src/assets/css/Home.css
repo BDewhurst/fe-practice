@@ -44,6 +44,6 @@
 #deliveroo-image{
     display: flex;
     align-items: center;
-    max-width:10vw;
-    max-height: auto;
+    font-size: 70px;
+    color: white;
 }

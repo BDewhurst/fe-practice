@@ -1,5 +1,5 @@
 import "../css/Home.css"
-
+import {GiKangaroo} from "react-icons/gi"
 function Home() {
 
 
@@ -7,7 +7,7 @@ function Home() {
         <main className="home-page">        
             <div id='home'>
             
-                <img src="./src/assets/deliveroo-svgrepo-com.svg" id="deliveroo-image"/>
+                <GiKangaroo id="deliveroo-image"/>
             <h2 id="welcome_banner">Welcome to Take That!</h2>
             <p>
             Find yourself a delicious takeaway...
