@@ -1,17 +1,31 @@
 .individual-item {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 5px; 
-    padding: 5px;
-    list-style: none;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30vw, 1fr));
+  gap: 20px; 
+  padding: 10px;
+  list-style: none;
+  margin: 1rem;
+
+}
 
   .item-card {
     margin-bottom: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #02cdbc;
+    padding: 1rem;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+  }
+
+  .item-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+  
   }
   
 .individual-item {
     flex: 1;
     list-style: none;
-    padding: 0;
+    padding: 25px;
+
   }

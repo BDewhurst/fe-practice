@@ -1,12 +1,19 @@
 .restaurant-container {
   display: flex;
+  align-items: flex-start; 
 }
 
 .restaurant-details {
-  flex: 1;
-  margin-right: 20px;
+  grid-column: 2 / 3; 
+  padding: 20px; 
 }
 
+.restaurant_img {
+  max-width: 30vw;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 20px; 
+}
   .restaurant-name {
     font-size: 24px;
     font-weight: bold;
@@ -21,12 +28,5 @@
   
   .rating-container svg {
     margin-right: 5px;
-    color: #ffcc00; 
   }
   
-  .restaurant_img {
-    width: 30vw; 
-    height: auto; 
-    border-radius: 5px;
-    margin-top: 10px;
-  }

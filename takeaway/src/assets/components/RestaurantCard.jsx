@@ -23,7 +23,7 @@ function RestaurantCard() {
              <p>{address}</p>
              <p>{cuisine}</p>
              <p className="Rating-container"><AiFillStar/>{rating}</p>
-             <img src={article_img_url} alt={name} className="restaurant_img"/>  
+             <img src={article_img_url} alt={name} className="restaurant_image"/>  
              </Link>        
         </li>
        
