@@ -35,3 +35,10 @@ export const changeRating = (restaurantId, rating) => {
     })
 }
 
+export const findUser = (username) => {
+    return takeawayApi.get(`users/${username}`).then((res)=> {
+        console.log(res.data)
+        return res.data
+    })
+}
+

@@ -1,6 +1,6 @@
 #deliveroo_logo {
-    font-size: 40px; 
     color: white;
+    font-size: 2rem; 
 }
 .nav_bar {
     display: flex;
@@ -23,8 +23,8 @@
 }
 
 .icon {
-    width: 3vw; 
-    height: 3vh;
+    font-size: 2rem; 
+    margin-right: 0.5rem;
 }
 
 .icon-container {

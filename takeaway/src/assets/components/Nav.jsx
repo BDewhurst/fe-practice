@@ -3,6 +3,7 @@ import "../css/nav.css"
 import {BiHome, BiFoodMenu} from "react-icons/bi"
 import {IoFastFood} from "react-icons/io5"
 import {GiKangaroo} from "react-icons/gi"
+import { BiLogIn } from 'react-icons/bi'
 
 const Nav = () => {
     return(
@@ -29,6 +30,12 @@ const Nav = () => {
                     <div className='icon-container'>
                     <IoFastFood className='icon' /> 
                     <p className='icon-text'>Cuisine</p>
+                    </div>
+                </Link>
+                <Link to="/login" className="nav_link">
+                    <div className='icon-container'>
+                    <BiLogIn className='icon' /> 
+                    <p className='icon-text'>Login</p>
                     </div>
                 </Link>
             </nav>
