@@ -5,9 +5,8 @@ import {Routes, Route } from 'react-router-dom'
 import Restaurants from './assets/components/Restaurants'
 import Cuisine from './assets/components/Cuisine'
 import IndividualRestaurant from './assets/components/IndividualRestaurantCard'
-import { createContext } from 'react'
 import Login from './assets/components/Login'
-import { useEffect, useState } from 'react'
+import Profile from './assets/components/Profile'
 
 
 function App() {
@@ -17,8 +16,11 @@ function App() {
 
 
   return (
+    
     <>
      <Nav/>
+
+      <Profile/>
   <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/Restaurants" element={<Restaurants />}/>
@@ -26,7 +28,9 @@ function App() {
         <Route path="/Cuisine" element={<Cuisine />}/>
         <Route path= "/login" element={<Login />} />
         </Routes>
+
     </>
+   
   )
 }
 

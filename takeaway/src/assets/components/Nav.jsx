@@ -38,6 +38,7 @@ const Nav = () => {
                     <p className='icon-text'>Login</p>
                     </div>
                 </Link>
+                
             </nav>
 
         </>

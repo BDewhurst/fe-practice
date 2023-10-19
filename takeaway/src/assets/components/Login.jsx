@@ -1,22 +1,23 @@
 import React, { useState, useEffect } from "react";
 import { findUser } from "../../../api";
-
+import { useAuth } from "./CurrentUserContext";
 function Login() {
   const [username, setUsername] = useState('');
-  const [userData, setUserData] = useState([]);
 
+
+
+  const { login } = useAuth();
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    if (username) {
+      findUser(username).then((userData) => {
+        login(userData);
+      });
+    }
   };
 
-  useEffect(() => {
-    if (username) {
-      findUser(username).then((data) => {
-        setUserData(data);
-        });
-    }
-}, [username]); 
+
 
   return (
     <div>
