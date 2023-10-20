@@ -43,3 +43,10 @@ export const findUser = (username) => {
     })
 }
 
+export const getCommentsById = (restaurantId) => {
+    return takeawayApi.get(`comments/${restaurantId}`).then((res)=> {
+       console.log(res.data)
+        return res.data
+    })
+}   
+

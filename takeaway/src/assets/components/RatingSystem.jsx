@@ -21,7 +21,7 @@ const handleClick = (newRating) => {
     return (
         <div id="rating-system">
         <h2>Please leave a rating...</h2>
-        <div id="stars">
+        <div className="star-container">
         <AiFillStar onClick={() => handleClick(1) } className="star-icon"/>
         <AiFillStar onClick={() => handleClick(2)} className="star-icon"/>
         <AiFillStar onClick={() => handleClick(3)} className="star-icon"/>
