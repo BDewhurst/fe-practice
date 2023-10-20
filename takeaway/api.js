@@ -12,6 +12,7 @@ export const getAllCuisines = () => {
 
 export const getAllRestaurants = () => {
     return takeawayApi.get(`/restaurants`).then((res) => {
+        console.log(res.data)
         return res.data
     })
 }
@@ -30,14 +31,14 @@ export const getItemById = (restaurantId) => {
 
 export const changeRating = (restaurantId, rating) => {
     return takeawayApi.patch(`restaurants/${restaurantId}`, {'inc_vote': rating}).then((res)=> {
-        console.log(res.data)
+        
         return res.data
     })
 }
 
 export const findUser = (username) => {
     return takeawayApi.get(`users/${username}`).then((res)=> {
-        console.log(res.data)
+       
         return res.data
     })
 }

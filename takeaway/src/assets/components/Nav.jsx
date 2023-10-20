@@ -4,16 +4,22 @@ import {BiHome, BiFoodMenu} from "react-icons/bi"
 import {IoFastFood} from "react-icons/io5"
 import {GiKangaroo} from "react-icons/gi"
 import { BiLogIn } from 'react-icons/bi'
+import Profile from './Profile'
 
 const Nav = () => {
     return(
         <>
          
             <nav className='nav_bar'>
+                <div id="title">
             <GiKangaroo id="deliveroo_logo"/>
             <header>
                 <h1 id="main_title">Take that!</h1>
             </header>
+            </div>
+            <div id="all-icons">
+
+            
                 <Link to="/" className="nav_link">
                     <div className="icon-container">
                     <BiHome className="icon"/>
@@ -38,7 +44,10 @@ const Nav = () => {
                     <p className='icon-text'>Login</p>
                     </div>
                 </Link>
-                
+
+            <Profile/>
+
+                </div>
             </nav>
 
         </>

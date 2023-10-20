@@ -20,7 +20,6 @@ function App() {
     <>
      <Nav/>
 
-      <Profile/>
   <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/Restaurants" element={<Restaurants />}/>

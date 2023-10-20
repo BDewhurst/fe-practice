@@ -1,14 +1,32 @@
 import React from "react";
 import { useAuth } from "./CurrentUserContext";
+import "../css/profile.css";
+import { PiSmileySad } from "react-icons/pi";
+import "../css/nav.css";
 
 function Profile() {
   const { user } = useAuth();
-console.log(user)
+
   if (user) {
-    return <div>You are logged in as {user[0].name}</div>;
+    return (
+      <div>
+        {" "}
+        <img src={user[0].avatar_url} id="avatar" />
+        {user[0].name}
+      </div>
+    );
   } else {
-    return <div>You are not logged in.</div>;
+    return (
+      <div className="nav_link">
+      <div className="icon-container">
+        <div className="icon">
+          <PiSmileySad />
+        </div>
+          <p className="icon-text">Logged Out </p>
+          </div>
+      </div>
+    );
   }
 }
 
-export default Profile
+export default Profile;
