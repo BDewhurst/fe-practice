@@ -5,6 +5,7 @@ import {IoFastFood} from "react-icons/io5"
 import {GiKangaroo} from "react-icons/gi"
 import { BiLogIn } from 'react-icons/bi'
 import Profile from './Profile'
+import Logout from './Logout'
 
 const Nav = () => {
     return(
@@ -19,7 +20,7 @@ const Nav = () => {
             </div>
             <div id="all-icons">
 
-            
+                <Logout />
                 <Link to="/" className="nav_link">
                     <div className="icon-container">
                     <BiHome className="icon"/>

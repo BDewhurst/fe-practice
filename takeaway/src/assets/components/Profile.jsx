@@ -19,9 +19,7 @@ function Profile() {
     return (
       <div className="nav_link">
       <div className="icon-container">
-        <div className="icon">
-          <PiSmileySad />
-        </div>
+          <PiSmileySad className="icon"/>
           <p className="icon-text">Logged Out </p>
           </div>
       </div>
