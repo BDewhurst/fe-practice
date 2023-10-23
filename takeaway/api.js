@@ -12,7 +12,7 @@ export const getAllCuisines = () => {
 
 export const getAllRestaurants = () => {
     return takeawayApi.get(`/restaurants`).then((res) => {
-        console.log(res.data)
+
         return res.data
     })
 }
@@ -45,8 +45,14 @@ export const findUser = (username) => {
 
 export const getCommentsById = (restaurantId) => {
     return takeawayApi.get(`comments/${restaurantId}`).then((res)=> {
-       console.log(res.data)
+
         return res.data
     })
 }   
+
+export const getRestaurantByCuisine = (cuisine) => {
+    return takeawayApi.get(`cuisines/${cuisine}`).then((res) => {
+        return res.data
+    })
+}
 
