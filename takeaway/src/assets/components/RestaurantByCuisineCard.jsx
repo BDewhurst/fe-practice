@@ -19,25 +19,21 @@ useEffect(() => {
 
 
     return (
-        <main className="restaurant-container">
-
-  <div className="restaurant-details">
-
-    {restaurant.map(({ restaurant_id, name, address, cuisine, rating, article_img_url }) => (
-          <Link to={`/Restaurant/${restaurant_id}`} key={restaurant_id}>
-      <div key={restaurant_id} className="restaurant-card">
+      <ul className="restaurant-list">
         
-        <h1 className="restaurant-name">{name}</h1>
-      <p>{address}</p>
-      <p>{cuisine}</p>
-        <p className="Rating-container"><AiFillStar/>{rating}</p>
-         <img src={article_img_url} alt={name} className="restaurant_img"/>
-          </div>
-      </Link>  
-    ))}
-
-  </div>
-</main>
+      {restaurant.map(({ restaurant_id, name, address, cuisine, rating, article_img_url}) => (
+        <li key={restaurant_id} className="restaurant">
+          <Link to={`/restaurant/${restaurant_id}`}>
+             <h1 className="restaurant_name">{name}</h1>
+             <p>{address}</p>
+             <p>{cuisine}</p>
+             <p className="Rating-container"><AiFillStar/>{rating}</p>
+             <img src={article_img_url} alt={name} className="restaurant_image"/>  
+             </Link>        
+        </li>
+       
+      ))}
+    </ul>
 );
 }
 

@@ -20,6 +20,7 @@ function RestaurantCard() {
     return (
       <div className="loading-container">
         <ClipLoader color={"#36D7B7"} loading={isLoading} size={50} />
+        The restaurants are loading but take a minute or so... Apologies, I'm trying to fix the slow loading time
       </div>
     );
   }

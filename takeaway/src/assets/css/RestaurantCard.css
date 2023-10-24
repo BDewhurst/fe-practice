@@ -40,3 +40,9 @@
     height: auto;
     border-radius: 5px;
   }
+
+  .loading-container {
+    align-items: center;
+    text-align: center;
+    display: center;
+  }

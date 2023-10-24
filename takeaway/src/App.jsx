@@ -6,8 +6,8 @@ import Restaurants from './assets/components/Restaurants'
 import Cuisine from './assets/components/Cuisine'
 import IndividualRestaurant from './assets/components/IndividualRestaurantCard'
 import Login from './assets/components/Login'
-import Profile from './assets/components/Profile'
 import RestaurantByCuisineCard from './assets/components/RestaurantByCuisineCard'
+
 
 
 function App() {
@@ -29,7 +29,6 @@ function App() {
         <Route path= "/login" element={<Login />} />
         <Route path="cuisines/:cuisine" element={<RestaurantByCuisineCard />}/>
         </Routes>
-
     </>
    
   )

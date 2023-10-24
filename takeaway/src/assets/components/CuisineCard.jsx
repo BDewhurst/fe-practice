@@ -27,7 +27,7 @@ function CuisineCard() {
     <ul className="cuisine-list">
         
       {cuisines.map(({ slug, article_img_url }) => (
-  <Link to={`/cuisines/${slug}`}>
+  <Link to={`/cuisines/${slug}`}  className="link-no-underline">
         <li key={slug} className="cuisine">
              <h1 className="cuisine_name">{slug}</h1>
           <img src={article_img_url} alt={slug} className="food_img"/>

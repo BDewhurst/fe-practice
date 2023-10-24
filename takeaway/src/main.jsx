@@ -5,9 +5,10 @@ import './index.css'
 import { BrowserRouter } from 'react-router-dom'
 import { AuthProvider } from './assets/components/CurrentUserContext.jsx'
 
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
-  <AuthProvider>
+<AuthProvider>
     <App />
     </AuthProvider>
   </BrowserRouter>
