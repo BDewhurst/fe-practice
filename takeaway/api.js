@@ -56,3 +56,9 @@ export const getRestaurantByCuisine = (cuisine) => {
     })
 }
 
+export const postComment = (comment, restaurantId) => {
+    return takeawayApi.post(`comments/${restaurantId}`, comment).then((res) => {
+        return res.data
+    })
+}
+

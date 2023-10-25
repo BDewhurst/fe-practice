@@ -4,6 +4,7 @@ import { getCommentsById } from "../../../api"
 import format from "date-fns/format"
 import {FaRegThumbsUp} from "react-icons/fa"
 import "../css/Comment.css"
+import CommentAdder from "./CommentAdder"
 
 function CommentCard(){
 
@@ -18,6 +19,7 @@ useEffect(() => {
     })
 }, [])
     return (
+      <main>
         <ul className="comments-list">
         
         {comments.map(({ comment_id, author, description, votes, created_at}) => (
@@ -32,6 +34,8 @@ useEffect(() => {
          
         ))}
       </ul>
+                  <CommentAdder setComments={setComments} />
+                  </main>
 )
 }
 

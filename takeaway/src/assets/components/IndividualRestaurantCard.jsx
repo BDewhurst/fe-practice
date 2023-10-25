@@ -8,6 +8,7 @@ import { ClipLoader } from "react-spinners";
 import RatingSystem from "./RatingSystem";
 import "../css/RatingSystem.css"
 import CommentCard from "./CommentCard";
+import CommentAdder from "./CommentAdder";
 
 function IndividualRestaurant() {
   const { restaurantId } = useParams();
@@ -43,7 +44,7 @@ function IndividualRestaurant() {
              <img src={article_img_url} alt={name} className="restaurant_img"/>  
 
              <CommentCard />
-        
+
           </div>
         ))}
       </div>
