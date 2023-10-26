@@ -20,6 +20,7 @@ useEffect(() => {
 }, [])
     return (
       <main>
+        <CommentAdder setComments={setComments} />
         <ul className="comments-list">
         
         {comments.map(({ comment_id, author, description, votes, created_at}) => (
@@ -34,7 +35,7 @@ useEffect(() => {
          
         ))}
       </ul>
-                  <CommentAdder setComments={setComments} />
+                  
                   </main>
 )
 }

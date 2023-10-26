@@ -2,6 +2,7 @@ import { useAuth } from "./CurrentUserContext";
 import { useParams } from "react-router-dom";
 import { useState } from "react";
 import { postComment } from "../../../api";
+import "../css/CommentAdder.css"
 
 
 
@@ -9,6 +10,7 @@ import { postComment } from "../../../api";
         const { restaurantId } = useParams();
         const { user } = useAuth();
         const [description, setDescription] = useState("");
+        const [errorMessage, setErrorMessage] = useState("");
       
         function handleSubmit(e) {
           e.preventDefault();
@@ -27,6 +29,10 @@ import { postComment } from "../../../api";
             }, [setComments]);
     
             setDescription("");
+            setErrorMessage("");
+          }
+          else {
+            setErrorMessage("Please log in to comment.");
           }
         }
 
@@ -39,6 +45,7 @@ import { postComment } from "../../../api";
             setDescription(e.target.value)
         }} />
         <button id='add-comment-button'>Add Comment</button>
+        {errorMessage && <p style={{ color: "red" }}>{errorMessage}</p>}
     </form>
     </main>
     )
