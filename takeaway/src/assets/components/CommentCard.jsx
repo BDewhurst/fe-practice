@@ -5,6 +5,7 @@ import format from "date-fns/format"
 import {FaRegThumbsUp} from "react-icons/fa"
 import "../css/Comment.css"
 import CommentAdder from "./CommentAdder"
+import DeleteButton from "./DeleteButton"
 
 function CommentCard(){
 
@@ -30,7 +31,12 @@ useEffect(() => {
                <p id="description">{description}</p>
                <p id="votes"> <FaRegThumbsUp/>{votes}</p>
                <p id="author">{author}</p>
-               <p>{format(new Date(created_at), "MM/dd/yyyy HH:mm:ss")}</p>     
+               <p>{format(new Date(created_at), "MM/dd/yyyy HH:mm:ss")}</p>
+          <DeleteButton comment_id ={comment_id}
+          author={author}
+          comments={comments}
+          setComments={setComments}
+          />
           </li>
          
         ))}

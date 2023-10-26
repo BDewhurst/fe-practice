@@ -62,3 +62,9 @@ export const postComment = (comment, restaurantId) => {
     })
 }
 
+export const deleteComment = (commentId) => {
+
+    return takeawayApi.delete(`comments/${commentId}`).then((res) => {
+        return res.data
+    })
+}
