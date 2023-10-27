@@ -34,7 +34,6 @@ useEffect(() => {
                <p>{format(new Date(created_at), "MM/dd/yyyy HH:mm:ss")}</p>
           <DeleteButton comment_id ={comment_id}
           author={author}
-          comments={comments}
           setComments={setComments}
           />
           </li>
